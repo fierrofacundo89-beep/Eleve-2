@@ -196,7 +196,7 @@ export default function Hero({ ready }: { ready: boolean }) {
       {/* Scroll indicator */}
       <div
         data-hero-scroll
-        className="absolute bottom-7 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex"
+        className="pointer-events-none absolute bottom-7 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex"
         style={{ visibility: ready ? undefined : 'hidden' }}
       >
         <span className="text-[0.58rem] uppercase tracking-luxe text-stone">Desliza</span>

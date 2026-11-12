@@ -90,7 +90,8 @@ export default function Reservations() {
                   <span className="w-20 shrink-0 text-[0.62rem] uppercase tracking-luxe text-champagne/80 leading-5">
                     Contacto
                   </span>
-                  reservations@eleve-paris.example · +33 1 42 00 00 00
+                  <span className="break-all">reservations@eleve-paris.example</span> ·{' '}
+                  <span className="whitespace-nowrap">+33 1 42 00 00 00</span>
                 </p>
               </div>
             </Reveal>

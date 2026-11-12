@@ -30,7 +30,7 @@ export default function App() {
   }, [ready])
 
   return (
-    <div className="grain min-h-screen bg-ink text-ivory">
+    <div className="min-h-screen bg-ink text-ivory">
       <a
         href="#main"
         className="sr-only z-[110] bg-champagne px-6 py-3 text-xs uppercase tracking-luxe text-ink focus:not-sr-only focus:fixed focus:left-4 focus:top-4"

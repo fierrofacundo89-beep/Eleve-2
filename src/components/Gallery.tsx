@@ -88,6 +88,7 @@ function Lightbox({
       </button>
       <button
         onClick={onClose}
+        autoFocus
         aria-label="Cerrar galería"
         className="absolute right-5 top-5 p-3 text-[0.68rem] uppercase tracking-luxe text-stone transition-colors hover:text-champagne md:right-10 md:top-8"
       >
