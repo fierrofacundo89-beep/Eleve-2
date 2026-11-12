@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Magnetic from './Magnetic'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -80,6 +81,29 @@ export default function Hero({ ready }: { ready: boolean }) {
     return () => ctx.revert()
   }, [])
 
+  // Mouse-driven depth (fine pointers only): the photograph and the
+  // typography sit on separate planes that drift in opposite directions.
+  useEffect(() => {
+    const fine = window.matchMedia('(pointer: fine)').matches
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (!fine || reduced) return
+    const root = rootRef.current!
+    const content = root.querySelector('[data-hero-content]')
+    const imgX = gsap.quickTo(imgRef.current, 'x', { duration: 1.4, ease: 'power3' })
+    const imgY = gsap.quickTo(imgRef.current, 'y', { duration: 1.4, ease: 'power3' })
+    const txtX = gsap.quickTo(content, 'x', { duration: 1.1, ease: 'power3' })
+
+    const onMove = (e: MouseEvent) => {
+      const nx = e.clientX / window.innerWidth - 0.5
+      const ny = e.clientY / window.innerHeight - 0.5
+      imgX(nx * -22)
+      imgY(ny * -14)
+      txtX(nx * 10)
+    }
+    root.addEventListener('mousemove', onMove, { passive: true })
+    return () => root.removeEventListener('mousemove', onMove)
+  }, [])
+
   return (
     <section
       ref={rootRef}
@@ -89,7 +113,7 @@ export default function Hero({ ready }: { ready: boolean }) {
       {/* Cinematic image */}
       <div ref={imgRef} data-hero-img className="absolute inset-0 will-change-transform">
         <img
-          src="/images/hero-plating.jpg"
+          src="/images/hero-plating.webp"
           alt="An ÉLÉVÉ chef finishing a plate with tweezers at the kitchen pass"
           className="h-full w-full scale-105 object-cover object-center"
         />
@@ -145,22 +169,26 @@ export default function Hero({ ready }: { ready: boolean }) {
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
-            <a
-              data-hero-cta
-              href="#experience"
-              className="btn-luxe btn-gold"
-              style={{ visibility: ready ? undefined : 'hidden' }}
-            >
-              Discover the experience
-            </a>
-            <a
-              data-hero-cta
-              href="#reservations"
-              className="btn-luxe btn-ghost"
-              style={{ visibility: ready ? undefined : 'hidden' }}
-            >
-              Reserve a table
-            </a>
+            <Magnetic>
+              <a
+                data-hero-cta
+                href="#experience"
+                className="btn-luxe btn-gold"
+                style={{ visibility: ready ? undefined : 'hidden' }}
+              >
+                Discover the experience
+              </a>
+            </Magnetic>
+            <Magnetic>
+              <a
+                data-hero-cta
+                href="#reservations"
+                className="btn-luxe btn-ghost"
+                style={{ visibility: ready ? undefined : 'hidden' }}
+              >
+                Reserve a table
+              </a>
+            </Magnetic>
           </div>
         </div>
       </div>

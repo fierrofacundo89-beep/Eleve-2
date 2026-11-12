@@ -4,6 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useLenis } from './hooks/useLenis'
 import Preloader from './components/Preloader'
 import Cursor from './components/Cursor'
+import ScrollProgress from './components/ScrollProgress'
+import SectionDivider from './components/SectionDivider'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Experience from './components/Experience'
@@ -29,14 +31,23 @@ export default function App() {
 
   return (
     <div className="grain min-h-screen bg-ink text-ivory">
+      <a
+        href="#main"
+        className="sr-only z-[110] bg-champagne px-6 py-3 text-xs uppercase tracking-luxe text-ink focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+      >
+        Skip to content
+      </a>
       <Preloader onDone={() => setReady(true)} />
       <Cursor />
+      <ScrollProgress />
       <Navbar />
-      <main>
+      <main id="main">
         <Hero ready={ready} />
         <Experience />
+        <SectionDivider />
         <Philosophy />
         <Menu />
+        <SectionDivider />
         <Chef />
         <Gallery />
         <Reservations />

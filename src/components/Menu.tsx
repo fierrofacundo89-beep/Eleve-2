@@ -148,7 +148,7 @@ export default function Menu() {
               loop
               playsInline
               preload="metadata"
-              poster="/images/dish-beef.jpg"
+              poster="/images/dish-beef.webp"
               aria-label="Slow cinematic film of the signature beef course"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />

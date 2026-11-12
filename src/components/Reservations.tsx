@@ -47,7 +47,7 @@ export default function Reservations() {
       {/* Atmospheric backdrop */}
       <div className="absolute inset-0">
         <img
-          src="/images/dining-hall.jpg"
+          src="/images/dining-hall.webp"
           alt=""
           aria-hidden
           loading="lazy"

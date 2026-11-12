@@ -75,7 +75,7 @@ export default function Experience() {
         <div className="mt-20 grid grid-cols-12 gap-5 md:mt-28 md:gap-8">
           <div className="col-span-12 md:col-span-7">
             <ParallaxImage
-              src="/images/dining-room.jpg"
+              src="/images/dining-room.webp"
               alt="The ÉLÉVÉ dining room — walnut panelling, raw stone and brass under warm light"
               className="aspect-[4/3]"
               speed={10}
@@ -90,7 +90,7 @@ export default function Experience() {
 
           <div className="col-span-10 col-start-3 mt-4 md:col-span-4 md:col-start-9 md:mt-40">
             <ParallaxImage
-              src="/images/table-setting.jpg"
+              src="/images/table-setting.webp"
               alt="Knotted linen napkin, crystal coupes and candlelight on walnut"
               className="aspect-[3/4]"
               speed={16}
@@ -104,7 +104,7 @@ export default function Experience() {
 
           <div className="col-span-11 mt-6 md:col-span-5 md:col-start-2 md:-mt-10">
             <ParallaxImage
-              src="/images/dining-couple.jpg"
+              src="/images/dining-couple.webp"
               alt="Two guests in conversation over wine in the candlelit dining room"
               className="aspect-[16/11]"
               speed={12}
@@ -135,7 +135,7 @@ export default function Experience() {
           loop
           playsInline
           preload="metadata"
-          poster="/images/dining-room.jpg"
+          poster="/images/dining-room.webp"
           aria-label="Ambient film of the ÉLÉVÉ dining room by candlelight"
         />
         <div className="absolute inset-0 bg-ink/25" />

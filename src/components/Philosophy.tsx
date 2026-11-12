@@ -89,7 +89,7 @@ export default function Philosophy() {
 
           <div className="md:col-span-4 md:col-start-9">
             <ParallaxImage
-              src="/images/dish-amuse.jpg"
+              src="/images/dish-amuse.webp"
               alt="A single amuse-bouche plated under candlelight on hammered ceramic"
               className="aspect-[3/4] md:mt-24"
               speed={14}

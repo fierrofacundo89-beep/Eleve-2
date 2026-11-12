@@ -37,7 +37,7 @@ export default function Chef() {
           {/* Portrait */}
           <div className="relative md:col-span-5">
             <ParallaxImage
-              src="/images/chef-portrait.jpg"
+              src="/images/chef-portrait.webp"
               alt="Executive chef Julien Moreau in the ÉLÉVÉ dining room"
               className="aspect-[4/5]"
               speed={10}
@@ -113,7 +113,7 @@ export default function Chef() {
                 loop
                 playsInline
                 preload="metadata"
-                poster="/images/hero-plating.jpg"
+                poster="/images/hero-plating.webp"
                 aria-label="Chef Moreau plating a dish at the kitchen pass"
               />
             </Reveal>

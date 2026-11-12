@@ -18,7 +18,7 @@ export const dishes: Dish[] = [
     description:
       'Slow-glazed pork belly lacquered in cider caramel, charred pearl onion, smoked parsnip emulsion and a honeycomb tuile — a first whisper of the evening.',
     price: '€24',
-    image: '/images/dish-amuse.jpg',
+    image: '/images/dish-amuse.webp',
     alt: 'Amuse-bouche of glazed pork belly with honeycomb tuile on a dark ceramic plate',
   },
   {
@@ -29,7 +29,7 @@ export const dishes: Dish[] = [
     description:
       'Ember-roasted heritage carrots, romanesco and glazed cipollini over a velvet of butternut and brown butter, buckwheat crumble, oxalis and parsnip crisps.',
     price: '€32',
-    image: '/images/dish-garden.jpg',
+    image: '/images/dish-garden.webp',
     alt: 'Roasted autumn vegetables over butternut purée on a hand-thrown dark plate',
   },
   {
@@ -40,7 +40,7 @@ export const dishes: Dish[] = [
     description:
       'Butter-basted wild halibut, girolles and romanesco, chervil and dill, finished tableside with a champagne velouté and cold-pressed herb oil.',
     price: '€58',
-    image: '/images/dish-halibut.jpg',
+    image: '/images/dish-halibut.webp',
     alt: 'Seared halibut fillet with chanterelles and champagne velouté',
   },
   {
@@ -51,7 +51,7 @@ export const dishes: Dish[] = [
     description:
       'Dry-aged beef tenderloin glazed in its own jus, chanterelles, burnt onion petals, golden pomme purée and a reduction of ten years’ patience.',
     price: '€68',
-    image: '/images/dish-beef.jpg',
+    image: '/images/dish-beef.webp',
     alt: 'Dry-aged beef tenderloin with chanterelles and burnt onion petals',
   },
   {
@@ -62,7 +62,7 @@ export const dishes: Dish[] = [
     description:
       'Seventy-percent grand cru chocolate, blackberry and port gel, cocoa-nib lace, chocolate sorbet and a breath of gold leaf.',
     price: '€26',
-    image: '/images/dish-chocolate.jpg',
+    image: '/images/dish-chocolate.webp',
     alt: 'Dark chocolate dessert with blackberries, cocoa lace and gold leaf',
   },
 ]

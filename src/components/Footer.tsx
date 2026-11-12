@@ -37,15 +37,29 @@ export default function Footer() {
             </div>
 
             <div className="md:col-span-2">
-              <p className="text-[0.62rem] uppercase tracking-luxe text-champagne/80">Follow</p>
+              <p className="text-[0.62rem] uppercase tracking-luxe text-champagne/80">Contact</p>
               <ul className="mt-5 space-y-2 text-sm font-light text-stone">
-                {['Instagram', 'Journal', 'Press'].map((s) => (
-                  <li key={s}>
-                    <a href="#top" className="gold-underline transition-colors hover:text-ivory">
-                      {s}
-                    </a>
-                  </li>
-                ))}
+                <li>
+                  <a
+                    href="mailto:reservations@eleve-paris.example"
+                    className="gold-underline transition-colors hover:text-ivory"
+                  >
+                    Write to us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="tel:+33142000000"
+                    className="gold-underline transition-colors hover:text-ivory"
+                  >
+                    +33 1 42 00 00 00
+                  </a>
+                </li>
+                <li>
+                  <a href="#reservations" className="gold-underline transition-colors hover:text-ivory">
+                    Reserve a table
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

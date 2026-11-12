@@ -23,7 +23,32 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="preload" as="image" href="/images/hero-plating.jpg" />
+    <link rel="preload" as="image" href="/images/hero-plating.webp" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "ÉLÉVÉ",
+        "description": "Contemporary fine dining restaurant. Nine-course tasting menus composed nightly around the season.",
+        "servesCuisine": "Contemporary French",
+        "priceRange": "€€€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "12 Rue de l'Éclat",
+          "addressLocality": "Paris",
+          "postalCode": "75004",
+          "addressCountry": "FR"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "19:00",
+          "closes": "23:30"
+        },
+        "acceptsReservations": "True",
+        "image": "/images/hero-plating.jpg"
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
