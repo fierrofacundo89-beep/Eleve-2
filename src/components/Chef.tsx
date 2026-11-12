@@ -38,13 +38,13 @@ export default function Chef() {
           <div className="relative md:col-span-5">
             <ParallaxImage
               src="/images/chef-portrait.webp"
-              alt="Executive chef Julien Moreau in the ÉLÉVÉ dining room"
+              alt="El chef ejecutivo Julien Moreau en el comedor de ÉLÉVÉ"
               className="aspect-[4/5]"
               speed={10}
             />
             <Reveal delay={0.1} className="mt-5 flex items-baseline justify-between">
               <p className="text-[0.62rem] uppercase tracking-luxe text-stone">
-                Julien Moreau · Executive Chef
+                Julien Moreau · Chef Ejecutivo
               </p>
               <span className="h-px w-16 bg-champagne/40" />
             </Reveal>
@@ -53,7 +53,7 @@ export default function Chef() {
           {/* Bio */}
           <div className="md:col-span-6 md:col-start-7">
             <Reveal>
-              <Eyebrow>04 — The Chef</Eyebrow>
+              <Eyebrow>04 — El Chef</Eyebrow>
             </Reveal>
             <MaskedLines
               lines={['Julien', 'Moreau']}
@@ -61,39 +61,40 @@ export default function Chef() {
             />
             <Reveal delay={0.15}>
               <p className="mt-5 font-display text-xl font-light italic text-champagne md:text-2xl">
-                “I don't invent dishes. I listen to the season until it tells me what it
-                wants to become.”
+                «No invento platos. Escucho a la estación hasta que me dice en qué quiere
+                convertirse.»
               </p>
               <div className="mt-10 max-w-xl space-y-6 text-[0.93rem] font-light leading-[1.95] text-stone">
                 <p>
-                  Trained in the exacting kitchens of Lyon and refined through a decade at
-                  three-star houses in Paris and Copenhagen, Julien Moreau returned home
-                  with a singular conviction: that haute cuisine should feel inevitable,
-                  never performed.
+                  Formado en las exigentes cocinas de Lyon y pulido durante una década en
+                  casas de tres estrellas de París y Copenhague, Julien Moreau volvió a
+                  casa con una convicción singular: la alta cocina debe sentirse
+                  inevitable, nunca actuada.
                 </p>
                 <p>
-                  At ÉLÉVÉ he leads a brigade of twelve, working with a closed circle of
-                  growers, fishers and foragers within two hundred kilometres. Each menu
-                  begins at dawn in the market and ends, nine acts later, at your table.
+                  En ÉLÉVÉ dirige una brigada de doce, trabajando con un círculo cerrado
+                  de agricultores, pescadores y recolectores en un radio de doscientos
+                  kilómetros. Cada menú nace al alba en el mercado y termina, nueve actos
+                  después, en tu mesa.
                 </p>
               </div>
               <div className="mt-10 flex gap-14">
                 <div>
                   <p className="font-display text-3xl font-light text-champagne">22</p>
                   <p className="mt-1 text-[0.6rem] uppercase tracking-luxe text-stone">
-                    Years at the stove
+                    Años frente al fuego
                   </p>
                 </div>
                 <div>
                   <p className="font-display text-3xl font-light text-champagne">12</p>
                   <p className="mt-1 text-[0.6rem] uppercase tracking-luxe text-stone">
-                    Hands in the brigade
+                    Manos en la brigada
                   </p>
                 </div>
                 <div>
                   <p className="font-display text-3xl font-light text-champagne">200<span className="text-xl">km</span></p>
                   <p className="mt-1 text-[0.6rem] uppercase tracking-luxe text-stone">
-                    Sourcing radius
+                    Radio de proveedores
                   </p>
                 </div>
               </div>
@@ -114,15 +115,15 @@ export default function Chef() {
                 playsInline
                 preload="metadata"
                 poster="/images/hero-plating.webp"
-                aria-label="Chef Moreau plating a dish at the kitchen pass"
+                aria-label="El chef Moreau emplatando en el pase de cocina"
               />
             </Reveal>
           </div>
           <div className="flex items-end md:col-span-3 md:col-start-10">
             <Reveal delay={0.2}>
               <p className="font-display text-xl font-light italic leading-relaxed text-ivory/85">
-                Tweezers, patience and firelight — the last thirty seconds of a dish are
-                its most honest.
+                Pinzas, paciencia y luz de fuego — los últimos treinta segundos de un
+                plato son los más honestos.
               </p>
             </Reveal>
           </div>

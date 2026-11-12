@@ -114,7 +114,7 @@ export default function Hero({ ready }: { ready: boolean }) {
       <div ref={imgRef} data-hero-img className="absolute inset-0 will-change-transform">
         <img
           src="/images/hero-plating.webp"
-          alt="An ÉLÉVÉ chef finishing a plate with tweezers at the kitchen pass"
+          alt="Un chef de ÉLÉVÉ terminando un plato con pinzas en el pase de cocina"
           className="h-full w-full scale-105 object-cover object-center"
         />
         {/* Light treatment */}
@@ -132,7 +132,7 @@ export default function Hero({ ready }: { ready: boolean }) {
           className="mb-5 text-[0.66rem] uppercase tracking-luxe text-champagne md:text-[0.72rem]"
           style={{ visibility: ready ? undefined : 'hidden' }}
         >
-          Contemporary Haute Cuisine — Paris
+          Alta Cocina Contemporánea — París
         </p>
 
         <h1
@@ -161,10 +161,10 @@ export default function Hero({ ready }: { ready: boolean }) {
         <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
           <div data-hero-tag style={{ visibility: ready ? undefined : 'hidden' }}>
             <p className="font-display text-2xl font-light italic leading-snug text-ivory md:text-[2.1rem]">
-              A different perspective on fine dining.
+              Una perspectiva diferente de la alta cocina.
             </p>
             <p className="mt-3 max-w-md text-sm font-light leading-relaxed tracking-wide2 text-stone">
-              Nine courses. One season. An evening composed like a piece of music.
+              Nueve pases. Una estación. Una velada compuesta como una pieza musical.
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export default function Hero({ ready }: { ready: boolean }) {
                 className="btn-luxe btn-gold"
                 style={{ visibility: ready ? undefined : 'hidden' }}
               >
-                Discover the experience
+                Descubre la experiencia
               </a>
             </Magnetic>
             <Magnetic>
@@ -186,7 +186,7 @@ export default function Hero({ ready }: { ready: boolean }) {
                 className="btn-luxe btn-ghost"
                 style={{ visibility: ready ? undefined : 'hidden' }}
               >
-                Reserve a table
+                Reserva tu mesa
               </a>
             </Magnetic>
           </div>
@@ -199,7 +199,7 @@ export default function Hero({ ready }: { ready: boolean }) {
         className="absolute bottom-7 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex"
         style={{ visibility: ready ? undefined : 'hidden' }}
       >
-        <span className="text-[0.58rem] uppercase tracking-luxe text-stone">Scroll</span>
+        <span className="text-[0.58rem] uppercase tracking-luxe text-stone">Desliza</span>
         <span className="relative h-12 w-px overflow-hidden bg-ivory/15">
           <span className="absolute left-0 top-0 h-full w-full animate-[scrollhint_2.2s_cubic-bezier(0.76,0,0.24,1)_infinite] bg-champagne" />
         </span>

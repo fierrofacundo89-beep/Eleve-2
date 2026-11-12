@@ -61,34 +61,34 @@ export default function Reservations() {
           {/* Intro column */}
           <div className="lg:col-span-5">
             <Reveal>
-              <Eyebrow>06 — Reservations</Eyebrow>
+              <Eyebrow>06 — Reservas</Eyebrow>
             </Reveal>
             <MaskedLines
-              lines={['Your table', 'awaits.']}
+              lines={['Tu mesa', 'te espera.']}
               className="mt-8 font-display text-5xl font-light leading-[1.02] text-ivory md:text-7xl"
             />
             <Reveal delay={0.15}>
               <p className="mt-8 max-w-md text-[0.95rem] font-light leading-[1.9] text-stone">
-                We welcome guests Tuesday through Saturday from seven in the evening.
-                Requests are answered personally by our maître d'hôtel within one working
-                day.
+                Recibimos a nuestros comensales de martes a sábado a partir de las siete
+                de la tarde. Nuestro maître d'hôtel responde personalmente cada solicitud
+                en el plazo de un día laborable.
               </p>
               <div className="mt-12 space-y-5 text-sm font-light text-stone">
                 <p className="flex gap-4">
                   <span className="w-20 shrink-0 text-[0.62rem] uppercase tracking-luxe text-champagne/80 leading-5">
-                    Address
+                    Dirección
                   </span>
-                  12 Rue de l'Éclat, 75004 Paris
+                  12 Rue de l'Éclat, 75004 París
                 </p>
                 <p className="flex gap-4">
                   <span className="w-20 shrink-0 text-[0.62rem] uppercase tracking-luxe text-champagne/80 leading-5">
-                    Hours
+                    Horario
                   </span>
-                  Tue — Sat · 19:00 — 23:30
+                  Mar — Sáb · 19:00 — 23:30
                 </p>
                 <p className="flex gap-4">
                   <span className="w-20 shrink-0 text-[0.62rem] uppercase tracking-luxe text-champagne/80 leading-5">
-                    Contact
+                    Contacto
                   </span>
                   reservations@eleve-paris.example · +33 1 42 00 00 00
                 </p>
@@ -118,14 +118,14 @@ export default function Reservations() {
                       <span className="text-xl text-champagne">✦</span>
                     </motion.div>
                     <h3 className="mt-8 font-display text-3xl font-light text-ivory">
-                      Request received
+                      Solicitud recibida
                     </h3>
                     <p className="mx-auto mt-4 max-w-sm text-sm font-light leading-relaxed text-stone">
-                      Thank you, {form.name.split(' ')[0] || 'guest'}. Your reservation
-                      request <span className="text-champagne">{reference}</span> has been
-                      recorded. Our maître d'hôtel will write to{' '}
-                      <span className="text-ivory/90">{form.email}</span> to confirm your
-                      table — no reservation is final until then.
+                      Gracias, {form.name.split(' ')[0] || 'estimado comensal'}. Tu
+                      solicitud de reserva <span className="text-champagne">{reference}</span>{' '}
+                      ha quedado registrada. Nuestro maître d'hôtel escribirá a{' '}
+                      <span className="text-ivory/90">{form.email}</span> para confirmar tu
+                      mesa — ninguna reserva es definitiva hasta entonces.
                     </p>
                     <button
                       onClick={() => {
@@ -134,7 +134,7 @@ export default function Reservations() {
                       }}
                       className="btn-luxe btn-ghost mt-10"
                     >
-                      New request
+                      Nueva solicitud
                     </button>
                   </motion.div>
                 ) : (
@@ -150,7 +150,7 @@ export default function Reservations() {
                     <div className="grid gap-9 sm:grid-cols-2">
                       <div className="sm:col-span-2">
                         <label htmlFor="r-name" className="mb-2 block text-[0.6rem] uppercase tracking-luxe text-stone">
-                          Full name
+                          Nombre completo
                         </label>
                         <input
                           id="r-name"
@@ -164,7 +164,7 @@ export default function Reservations() {
                       </div>
                       <div>
                         <label htmlFor="r-email" className="mb-2 block text-[0.6rem] uppercase tracking-luxe text-stone">
-                          Email
+                          Correo electrónico
                         </label>
                         <input
                           id="r-email"
@@ -179,7 +179,7 @@ export default function Reservations() {
                       </div>
                       <div>
                         <label htmlFor="r-phone" className="mb-2 block text-[0.6rem] uppercase tracking-luxe text-stone">
-                          Phone
+                          Teléfono
                         </label>
                         <input
                           id="r-phone"
@@ -194,7 +194,7 @@ export default function Reservations() {
                       </div>
                       <div>
                         <label htmlFor="r-date" className="mb-2 block text-[0.6rem] uppercase tracking-luxe text-stone">
-                          Date
+                          Fecha
                         </label>
                         <input
                           id="r-date"
@@ -208,7 +208,7 @@ export default function Reservations() {
                       </div>
                       <div>
                         <label htmlFor="r-time" className="mb-2 block text-[0.6rem] uppercase tracking-luxe text-stone">
-                          Time
+                          Hora
                         </label>
                         <select
                           id="r-time"
@@ -225,7 +225,7 @@ export default function Reservations() {
                       </div>
                       <div>
                         <label htmlFor="r-guests" className="mb-2 block text-[0.6rem] uppercase tracking-luxe text-stone">
-                          Guests
+                          Comensales
                         </label>
                         <select
                           id="r-guests"
@@ -235,21 +235,21 @@ export default function Reservations() {
                         >
                           {['1', '2', '3', '4', '5', '6'].map((n) => (
                             <option key={n} value={n}>
-                              {n} {n === '1' ? 'guest' : 'guests'}
+                              {n} {n === '1' ? 'comensal' : 'comensales'}
                             </option>
                           ))}
-                          <option value="7+">7 or more — private dining</option>
+                          <option value="7+">7 o más — comedor privado</option>
                         </select>
                       </div>
                       <div className="sm:col-span-2">
                         <label htmlFor="r-requests" className="mb-2 block text-[0.6rem] uppercase tracking-luxe text-stone">
-                          Special requests <span className="normal-case text-stone/60">(optional)</span>
+                          Peticiones especiales <span className="normal-case text-stone/60">(opcional)</span>
                         </label>
                         <textarea
                           id="r-requests"
                           rows={3}
                           className="field-luxe resize-none"
-                          placeholder="Allergies, occasions, wine preferences…"
+                          placeholder="Alergias, ocasiones especiales, preferencias de vino…"
                           value={form.requests}
                           onChange={(e) => set('requests')(e.target.value)}
                         />
@@ -258,8 +258,8 @@ export default function Reservations() {
 
                     {status === 'error' && (
                       <p role="alert" className="mt-6 text-sm font-light text-red-300/90">
-                        Something went wrong sending your request. Please try again, or call
-                        us directly.
+                        Algo salió mal al enviar tu solicitud. Inténtalo de nuevo o
+                        llámanos directamente.
                       </p>
                     )}
 
@@ -268,11 +268,11 @@ export default function Reservations() {
                       disabled={status === 'pending'}
                       className="btn-luxe btn-gold mt-10 w-full disabled:cursor-wait disabled:opacity-70 sm:w-auto"
                     >
-                      {status === 'pending' ? 'Sending…' : 'Request a table'}
+                      {status === 'pending' ? 'Enviando…' : 'Solicitar mesa'}
                     </button>
                     <p className="mt-5 text-[0.7rem] font-light leading-relaxed text-stone/70">
-                      Submitting sends a request only — your table is confirmed personally
-                      by email, never automatically.
+                      Al enviar solo se registra una solicitud — tu mesa se confirma
+                      personalmente por correo, nunca de forma automática.
                     </p>
                   </motion.form>
                 )}

@@ -9,42 +9,42 @@ export default function Footer() {
             <div className="md:col-span-5">
               <p className="font-display text-4xl tracking-luxe text-ivory md:text-5xl">ÉLÉVÉ</p>
               <p className="mt-6 max-w-sm text-sm font-light leading-[1.9] text-stone">
-                A different perspective on fine dining — contemporary haute cuisine in the
-                heart of Paris.
+                Una perspectiva diferente de la alta cocina — gastronomía contemporánea en
+                el corazón de París.
               </p>
             </div>
 
             <div className="md:col-span-2 md:col-start-7">
-              <p className="text-[0.62rem] uppercase tracking-luxe text-champagne/80">Visit</p>
+              <p className="text-[0.62rem] uppercase tracking-luxe text-champagne/80">Visítanos</p>
               <p className="mt-5 text-sm font-light leading-[2] text-stone">
                 12 Rue de l'Éclat
                 <br />
-                75004 Paris
+                75004 París
                 <br />
-                France
+                Francia
               </p>
             </div>
 
             <div className="md:col-span-2">
-              <p className="text-[0.62rem] uppercase tracking-luxe text-champagne/80">Hours</p>
+              <p className="text-[0.62rem] uppercase tracking-luxe text-champagne/80">Horario</p>
               <p className="mt-5 text-sm font-light leading-[2] text-stone">
-                Tue — Sat
+                Mar — Sáb
                 <br />
                 19:00 — 23:30
                 <br />
-                Closed Sun & Mon
+                Dom y Lun cerrado
               </p>
             </div>
 
             <div className="md:col-span-2">
-              <p className="text-[0.62rem] uppercase tracking-luxe text-champagne/80">Contact</p>
+              <p className="text-[0.62rem] uppercase tracking-luxe text-champagne/80">Contacto</p>
               <ul className="mt-5 space-y-2 text-sm font-light text-stone">
                 <li>
                   <a
                     href="mailto:reservations@eleve-paris.example"
                     className="gold-underline transition-colors hover:text-ivory"
                   >
-                    Write to us
+                    Escríbenos
                   </a>
                 </li>
                 <li>
@@ -57,7 +57,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="#reservations" className="gold-underline transition-colors hover:text-ivory">
-                    Reserve a table
+                    Reserva tu mesa
                   </a>
                 </li>
               </ul>
@@ -66,9 +66,9 @@ export default function Footer() {
         </Reveal>
 
         <div className="mt-20 flex flex-col items-start justify-between gap-4 border-t border-ivory/10 pt-8 text-[0.62rem] uppercase tracking-wide2 text-stone/60 md:flex-row md:items-center">
-          <p>© MMXXVI ÉLÉVÉ — A fictional restaurant, crafted as a digital experience.</p>
+          <p>© MMXXVI ÉLÉVÉ — Un restaurante ficticio, creado como experiencia digital.</p>
           <a href="#top" className="gold-underline tracking-luxe text-stone transition-colors hover:text-champagne">
-            Back to top ↑
+            Volver arriba ↑
           </a>
         </div>
       </div>

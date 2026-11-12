@@ -35,7 +35,7 @@ export default function App() {
         href="#main"
         className="sr-only z-[110] bg-champagne px-6 py-3 text-xs uppercase tracking-luxe text-ink focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
       >
-        Skip to content
+        Saltar al contenido
       </a>
       <Preloader onDone={() => setReady(true)} />
       <Cursor />

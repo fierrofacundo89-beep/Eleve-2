@@ -6,7 +6,7 @@ import { Eyebrow, ParallaxImage, Reveal } from './primitives'
 gsap.registerPlugin(ScrollTrigger)
 
 const STATEMENT =
-  'Exceptional cuisine begins with respect for ingredients, precision in technique and an endless pursuit of perfection.'
+  'La cocina excepcional nace del respeto por el ingrediente, la precisión en la técnica y una búsqueda incesante de la perfección.'
 
 export default function Philosophy() {
   const rootRef = useRef<HTMLElement>(null)
@@ -35,7 +35,7 @@ export default function Philosophy() {
     return () => ctx.revert()
   }, [])
 
-  const accent = new Set(['respect', 'precision', 'perfection.'])
+  const accent = new Set(['respeto', 'precisión', 'perfección.'])
 
   return (
     <section ref={rootRef} id="philosophy" className="relative overflow-hidden bg-coal">
@@ -51,7 +51,7 @@ export default function Philosophy() {
         <div className="grid gap-16 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-7">
             <Reveal>
-              <Eyebrow>02 — Our Philosophy</Eyebrow>
+              <Eyebrow>02 — Nuestra Filosofía</Eyebrow>
             </Reveal>
             <p
               data-statement
@@ -75,13 +75,13 @@ export default function Philosophy() {
               <div>
                 <p className="font-display text-4xl font-light text-champagne">09</p>
                 <p className="mt-2 text-[0.62rem] uppercase tracking-luxe text-stone">
-                  Courses, composed nightly
+                  Pases, compuestos cada noche
                 </p>
               </div>
               <div>
                 <p className="font-display text-4xl font-light text-champagne">48h</p>
                 <p className="mt-2 text-[0.62rem] uppercase tracking-luxe text-stone">
-                  From harvest to table, never more
+                  De la cosecha a la mesa, como máximo
                 </p>
               </div>
             </Reveal>
@@ -90,13 +90,13 @@ export default function Philosophy() {
           <div className="md:col-span-4 md:col-start-9">
             <ParallaxImage
               src="/images/dish-amuse.webp"
-              alt="A single amuse-bouche plated under candlelight on hammered ceramic"
+              alt="Un amuse-bouche emplatado a la luz de las velas sobre cerámica martillada"
               className="aspect-[3/4] md:mt-24"
               speed={14}
             />
             <Reveal delay={0.1} className="mt-5">
               <p className="text-[0.62rem] uppercase tracking-luxe text-stone">
-                Nothing on the plate without purpose.
+                Nada en el plato sin un propósito.
               </p>
             </Reveal>
           </div>

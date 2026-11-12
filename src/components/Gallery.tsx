@@ -37,7 +37,7 @@ function Lightbox({
       className="fixed inset-0 z-[70] flex items-center justify-center bg-ink/95 p-5 backdrop-blur-sm md:p-14"
       role="dialog"
       aria-modal="true"
-      aria-label={`${item.caption} — image ${index + 1} of ${galleryItems.length}`}
+      aria-label={`${item.caption} — imagen ${index + 1} de ${galleryItems.length}`}
       onClick={onClose}
     >
       <AnimatePresence mode="wait">
@@ -71,7 +71,7 @@ function Lightbox({
           e.stopPropagation()
           onStep(-1)
         }}
-        aria-label="Previous image"
+        aria-label="Imagen anterior"
         className="absolute left-3 top-1/2 -translate-y-1/2 p-4 text-2xl font-light text-stone transition-colors hover:text-champagne md:left-8"
       >
         ←
@@ -81,17 +81,17 @@ function Lightbox({
           e.stopPropagation()
           onStep(1)
         }}
-        aria-label="Next image"
+        aria-label="Imagen siguiente"
         className="absolute right-3 top-1/2 -translate-y-1/2 p-4 text-2xl font-light text-stone transition-colors hover:text-champagne md:right-8"
       >
         →
       </button>
       <button
         onClick={onClose}
-        aria-label="Close gallery"
+        aria-label="Cerrar galería"
         className="absolute right-5 top-5 p-3 text-[0.68rem] uppercase tracking-luxe text-stone transition-colors hover:text-champagne md:right-10 md:top-8"
       >
-        Close ✕
+        Cerrar ✕
       </button>
     </motion.div>
   )
@@ -114,18 +114,18 @@ export default function Gallery() {
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-6">
             <Reveal>
-              <Eyebrow>05 — Gallery</Eyebrow>
+              <Eyebrow>05 — Galería</Eyebrow>
             </Reveal>
             <MaskedLines
-              lines={['Stillness,', 'captured.']}
+              lines={['La calma,', 'capturada.']}
               className="mt-8 font-display text-5xl font-light leading-[1.02] text-ivory md:text-7xl"
             />
           </div>
           <div className="flex items-end md:col-span-4 md:col-start-9">
             <Reveal delay={0.15}>
               <p className="text-[0.95rem] font-light leading-[1.9] text-stone">
-                Fragments of the room, the table and the plate — photographed as we found
-                them, in their own light.
+                Fragmentos de la sala, de la mesa y del plato — fotografiados tal y como
+                los encontramos, con su propia luz.
               </p>
             </Reveal>
           </div>
@@ -143,7 +143,7 @@ export default function Gallery() {
                 onClick={() => setActive(i)}
                 data-cursor="zoom"
                 className="group block w-full overflow-hidden text-left"
-                aria-label={`Open image: ${item.caption}`}
+                aria-label={`Abrir imagen: ${item.caption}`}
               >
                 <div
                   className={`overflow-hidden ${

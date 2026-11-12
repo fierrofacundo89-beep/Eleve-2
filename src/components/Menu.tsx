@@ -113,18 +113,18 @@ export default function Menu() {
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-6">
             <Reveal>
-              <Eyebrow>03 — The Menu</Eyebrow>
+              <Eyebrow>03 — El Menú</Eyebrow>
             </Reveal>
             <MaskedLines
-              lines={['Nine acts.', 'One season.']}
+              lines={['Nueve actos.', 'Una estación.']}
               className="mt-8 font-display text-5xl font-light leading-[1.02] text-ivory md:text-7xl"
             />
           </div>
           <div className="flex items-end md:col-span-5 md:col-start-8">
             <Reveal delay={0.15}>
               <p className="max-w-md text-[0.95rem] font-light leading-[1.9] text-stone">
-                A selection from the current tasting menu. The full menu changes with the
-                market each morning — what follows is tonight's overture.
+                Una selección del menú degustación actual. La carta completa cambia con el
+                mercado cada mañana — lo que sigue es la obertura de esta noche.
               </p>
             </Reveal>
           </div>
@@ -149,15 +149,15 @@ export default function Menu() {
               playsInline
               preload="metadata"
               poster="/images/dish-beef.webp"
-              aria-label="Slow cinematic film of the signature beef course"
+              aria-label="Película cinematográfica del plato insignia de ternera"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
               <p className="text-[0.62rem] uppercase tracking-luxe text-champagne">
-                Signature · Filet des Prairies
+                Plato insignia · Filet des Prairies
               </p>
               <p className="mt-2 max-w-xs font-display text-xl font-light italic text-ivory md:text-2xl">
-                Ten years of patience, reduced to a glaze.
+                Diez años de paciencia, reducidos a un glaseado.
               </p>
             </div>
           </div>
@@ -172,15 +172,15 @@ export default function Menu() {
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
             <div>
               <p className="font-display text-3xl font-light text-ivory md:text-4xl">
-                The full tasting menu — <span className="italic text-champagne">€185</span>
+                Menú degustación completo — <span className="italic text-champagne">185 €</span>
               </p>
               <p className="mt-3 max-w-lg text-sm font-light leading-relaxed text-stone">
-                Nine courses with optional wine pairing (€95). Vegetal and pescatarian
-                journeys available with notice.
+                Nueve pases con maridaje de vinos opcional (95 €). Recorridos vegetal y
+                pescetariano disponibles avisando con antelación.
               </p>
             </div>
             <a href="#reservations" className="btn-luxe btn-ghost shrink-0">
-              Reserve a table
+              Reserva tu mesa
             </a>
           </div>
         </Reveal>

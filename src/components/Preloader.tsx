@@ -50,7 +50,7 @@ export default function Preloader({ onDone }: { onDone: () => void }) {
             transition={{ delay: 0.9, duration: 0.8 }}
             className="mt-6 text-[0.62rem] uppercase tracking-luxe text-stone"
           >
-            Fine Dining · Est. MMXVIII
+            Alta Cocina · Desde MMXVIII
           </motion.p>
         </motion.div>
       )}

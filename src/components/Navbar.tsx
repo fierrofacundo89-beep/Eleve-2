@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const LINKS = [
-  { label: 'The Experience', href: '#experience' },
-  { label: 'Our Philosophy', href: '#philosophy' },
-  { label: 'The Menu', href: '#menu' },
-  { label: 'The Chef', href: '#chef' },
-  { label: 'Gallery', href: '#gallery' },
+  { label: 'La Experiencia', href: '#experience' },
+  { label: 'Filosofía', href: '#philosophy' },
+  { label: 'El Menú', href: '#menu' },
+  { label: 'El Chef', href: '#chef' },
+  { label: 'Galería', href: '#gallery' },
 ]
 
 export default function Navbar() {
@@ -43,7 +43,7 @@ export default function Navbar() {
           <a
             href="#top"
             className="font-display text-xl tracking-luxe text-ivory transition-colors duration-500 hover:text-champagne md:text-2xl"
-            aria-label="ÉLÉVÉ — back to top"
+            aria-label="ÉLÉVÉ — volver arriba"
           >
             ÉLÉVÉ
           </a>
@@ -64,7 +64,7 @@ export default function Navbar() {
                 href="#reservations"
                 className="border border-champagne/60 px-6 py-2.5 text-[0.68rem] uppercase tracking-luxe text-champagne transition-all duration-500 hover:bg-champagne hover:text-ink"
               >
-                Reservations
+                Reservas
               </a>
             </li>
           </ul>
@@ -72,7 +72,7 @@ export default function Navbar() {
           <button
             onClick={() => setOpen(true)}
             className="group flex flex-col items-end gap-[7px] p-2 lg:hidden"
-            aria-label="Open menu"
+            aria-label="Abrir menú"
             aria-expanded={open}
           >
             <span className="h-px w-8 bg-ivory transition-all duration-500 group-hover:bg-champagne" />
@@ -96,13 +96,13 @@ export default function Navbar() {
               <button
                 onClick={() => setOpen(false)}
                 className="p-2 text-[0.68rem] uppercase tracking-luxe text-stone transition-colors hover:text-champagne"
-                aria-label="Close menu"
+                aria-label="Cerrar menú"
               >
-                Close
+                Cerrar
               </button>
             </div>
             <nav className="flex flex-1 flex-col items-start justify-center gap-2 px-8">
-              {[...LINKS, { label: 'Reservations', href: '#reservations' }].map((l, i) => (
+              {[...LINKS, { label: 'Reservas', href: '#reservations' }].map((l, i) => (
                 <div key={l.href} className="overflow-hidden">
                   <motion.a
                     href={l.href}
@@ -129,7 +129,7 @@ export default function Navbar() {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="px-8 pb-10 text-[0.65rem] uppercase tracking-luxe text-stone"
             >
-              12 Rue de l'Éclat, Paris · Tue — Sat, from 7pm
+              12 Rue de l'Éclat, París · Mar — Sáb, desde las 19 h
             </motion.div>
           </motion.div>
         )}
